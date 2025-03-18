@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/onest';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Onest Variable' ,sans-serif;
     color: #fff;

@@ -1,5 +1,4 @@
 import { SunIcon, GithubIcon } from 'lucide-react'
-import { Link } from 'react-router-dom'
 
 export function Navbar () {
     const NAV_SECTIONS = [
@@ -31,17 +30,21 @@ export function Navbar () {
     ]
 
     return (
-        <nav className='flex justify-between items-center gap-24 mt-4'>
-        {
-            NAV_SECTIONS.map((section) => (
-                <Link key={section.id} to={section.url}>
-                    {section.title}
-                </Link>
-            ))
-        }
+        <nav className='flex justify-between items-center max-w-full mt-4'>
+            <div></div>
+            <ul className='flex items-center gap-4 font-semibold'>
+
+            {
+                NAV_SECTIONS.map((section) => (
+                    <li key={section.id} className='cursor-pointer hover:text-purple-300 transition-colors'>
+                        {section.title}
+                    </li>
+                ))
+            }
+            </ul>
             <div className='flex items-center gap-6'>
-                <SunIcon />
-                <GithubIcon />
+                <SunIcon className='cursor-pointer hover:text-purple-300 transition-colors' />
+                <GithubIcon className='cursor-pointer hover:text-purple-300 transition-colors' />
             </div>
         </nav>
     )
