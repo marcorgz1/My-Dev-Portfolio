@@ -1,0 +1,64 @@
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+
+    & img {
+        border: 10px solid #fff;
+        border-radius: 100%;
+    }
+
+}
+
+.personal_info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+h1 {
+    display: inline-block;
+    background-image: linear-gradient(to right, #fef08a, #760ed8 45%); /* from-yellow-200 to-purple-500 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Gradient animated button */
+.gradient_button {
+    display: inline-block;
+    width: fit-content;
+    padding: 8px;
+    border: 3px solid #0000;
+    border-radius: 12px;
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(var(--angle),
+            #b2ff94,
+            #004720) border-box;
+    animation: 2s rotate linear infinite;
+
+    & button {
+        font-weight: 600;
+    }
+}
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.social_buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 24px;
+}

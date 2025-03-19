@@ -1,6 +1,9 @@
-import { SunIcon, GithubIcon } from 'lucide-react'
+import UseAnimations from 'react-useanimations';
+import github from 'react-useanimations/lib/github';
+import linkedin from 'react-useanimations/lib/linkedin';
+import '../css/Navbar.css'
 
-export function Navbar () {
+export function Navbar() {
     const NAV_SECTIONS = [
         {
             id: 1,
@@ -30,21 +33,21 @@ export function Navbar () {
     ]
 
     return (
-        <nav className='flex justify-between items-center max-w-full mt-4'>
+        <nav>
             <div></div>
-            <ul className='flex items-center gap-4 font-semibold'>
+            <ul>
 
-            {
-                NAV_SECTIONS.map((section) => (
-                    <li key={section.id} className='cursor-pointer hover:text-purple-300 transition-colors'>
-                        {section.title}
-                    </li>
-                ))
-            }
+                {
+                    NAV_SECTIONS.map((section) => (
+                        <li key={section.id}>
+                            {section.title}
+                        </li>
+                    ))
+                }
             </ul>
-            <div className='flex items-center gap-6'>
-                <SunIcon className='cursor-pointer hover:text-purple-300 transition-colors' />
-                <GithubIcon className='cursor-pointer hover:text-purple-300 transition-colors' />
+            <div>
+                <UseAnimations animation={github} strokeColor='white' />
+                <UseAnimations animation={linkedin} strokeColor='white' />
             </div>
         </nav>
     )
