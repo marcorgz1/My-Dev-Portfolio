@@ -1,6 +1,4 @@
 import UseAnimations from 'react-useanimations';
-import github from 'react-useanimations/lib/github';
-import linkedin from 'react-useanimations/lib/linkedin';
 import '../css/Navbar.css'
 
 export function Navbar() {
@@ -34,7 +32,6 @@ export function Navbar() {
 
     return (
         <nav>
-            <div></div>
             <ul>
 
                 {
@@ -45,10 +42,6 @@ export function Navbar() {
                     ))
                 }
             </ul>
-            <div>
-                <UseAnimations animation={github} strokeColor='white' />
-                <UseAnimations animation={linkedin} strokeColor='white' />
-            </div>
         </nav>
     )
 }

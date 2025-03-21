@@ -5,13 +5,6 @@ nav {
     max-width: 100%;
     margin-top: 16px;
 
-    & > div {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-right: 32px;
-    }
-
     & ul {
         display: flex;
         align-items: center;
@@ -21,7 +14,7 @@ nav {
         & li:hover {
             color: #f0bfff;
             cursor: pointer;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
         }
     }
 }

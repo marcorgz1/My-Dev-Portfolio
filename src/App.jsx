@@ -1,12 +1,12 @@
 import './App.css'
-import { Navbar } from './components/Navbar'
+import { Header } from './components/Header'
 import { Presentation } from './components/Presentation'
 
 function App() {
 
   return (
     <>
-      <Navbar />
+      <Header />
       <Presentation />
     </>
   )
