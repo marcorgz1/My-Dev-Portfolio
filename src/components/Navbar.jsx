@@ -1,4 +1,3 @@
-import UseAnimations from 'react-useanimations';
 import '../css/Navbar.css'
 
 export function Navbar() {
@@ -31,8 +30,8 @@ export function Navbar() {
     ]
 
     return (
-        <nav>
-            <ul>
+        <nav className='navbar'>
+            <ul className='navbar_sections'>
 
                 {
                     NAV_SECTIONS.map((section) => (

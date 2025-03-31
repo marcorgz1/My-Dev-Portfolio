@@ -1,20 +1,39 @@
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
     margin-top: 16px;
+}
 
-    & ul {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        font-weight: 500;
+.navbar_sections {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
 
-        & li:hover {
+    & > li {
+        list-style: none;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #f0bfff;
+            transition: width 0.3s ease-in-out;
+        }
+
+        &:hover {
             color: #f0bfff;
             cursor: pointer;
             transition: all 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+            width: 100%;
         }
     }
 }

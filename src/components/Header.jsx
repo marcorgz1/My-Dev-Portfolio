@@ -9,10 +9,10 @@ export function Header () {
         <main className='header'>
             <div></div>     
             <Navbar />
-            <section className='social_buttons'>
+            <div className='social_buttons'>
                 <UseAnimations animation={github} size={32} strokeColor='white' />
                 <UseAnimations animation={linkedin} size={32} strokeColor='white' />
-            </section>
+            </div>
         </main>
     )
 }
