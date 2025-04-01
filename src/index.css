@@ -12,49 +12,10 @@
     flex-direction: column;
 }
 
-html, body {
+body {
     font-family: 'Onest Variable', sans-serif;
     color: #fff;
     width: 100%;
-    height: 100%;
-    background: #020617;
-}
-
-.background-container {
-    position: fixed;
-    inset: 0;
-    z-index: -10;
-    height: 100vh;
-    width: 100vw;
-    background: #020617;
-}
-
-.radial-pulse {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle 400px at 50% 50%, rgba(255, 255, 255, 0.06), transparent);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-}
-
-.noise-pattern {
-    position: absolute;
-    inset: 0;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjI1Ii8+PC9zdmc+');
-    opacity: 0.5;
-}
-
-.radial-gradient {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle 900px at 50% 70%, rgba(76, 29, 149, 0.3), transparent);
+    min-height: 100vh;
+    background: #222;
 }
