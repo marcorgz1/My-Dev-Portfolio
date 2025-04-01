@@ -22,12 +22,9 @@ export function Studies () {
     ]
     return (
         <section className="studies">
-            <div className='studies_title__container'>
-                <div className='studies_title'>
-                    <SchoolIcon />
-                    <h1>Estudios</h1>
-                </div>
-                <p className="studies_title__text">Los estudios que he realizado a lo largo de mi carrera.</p>
+            <div className='studies_title'>
+                <SchoolIcon />
+                <h1>Estudios</h1>
             </div>
             <ul className='studies_list'>
             {
