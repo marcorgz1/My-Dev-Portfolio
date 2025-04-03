@@ -1,22 +1,44 @@
 import '../css/Projects.css'
-import firstProjectImage from '../assets/first_project.png'
+import { ProjectCard } from './ProjectCard'
+
+const PROJECTS = [
+    {
+        title: 'App Verificación Cuadros Istel',
+        description: 'Aplicación para administrar los cuadros de luz de una empresa en base a los clientes y a los requisitos de los mismos.',
+        image: '../assets/projects/first_project.png',
+        technologies: ['React', 'NodeJS', 'MySQL'],
+        github: 'https://github.com/marcorgz1/App-Verificacion-Cuadros-Istel'
+    },
+
+    {
+        title: 'Tenfe',
+        description: 'Aplicación para realizar viajes en tren alrededor de España de una forma intuitiva y sencilla.',
+        image: '../assets/projects/second_project.png',
+        technologies: ['React', 'NodeJS', 'MySQL'],
+        url: 'https://tenfe.onrender.com'
+    }
+]
 
 export function Projects() {
+
     return (
         <section className='projects'>
             <h1 className='projects_title'>Proyectos</h1>
             <div className='projects_container'>
-                <div className='project_card'>
-                    <h2 className='projects_container__card_title'>App Verificación Cuadros Istel</h2>
-                    <p className='projects_container__card_description'>
-                        Aplicación para administrar los cuadros de luz de una empresa en base a los clientes y a los requisitos de los mismos. 
-                    </p>
-                    <img src={firstProjectImage} alt="First project image" className='project_image' />
-                </div>
-                <div className='project_card'>
-                    <h2 className='projects_container__card_title'>Proyecto 2</h2>
-                    <p className='projects_container__card_description'>Descripción del proyecto 2.</p>
-                </div>
+            {
+                PROJECTS.map((project, index) => (
+                    <div key={index}>
+                        <ProjectCard 
+                            title={project.title} 
+                            description={project.description} 
+                            image={project.image} 
+                            technologies={project.technologies} 
+                            github={project?.github}
+                            url={project?.url}
+                        />
+                    </div>
+                ))
+            }
             </div>
         </section>
     )

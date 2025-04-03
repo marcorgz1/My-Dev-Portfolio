@@ -11,7 +11,7 @@ function App() {
           <Header />
           <Presentation />
           <Studies />
-          {/* <Projects /> */}
+          <Projects />
       </main>
     </>
   )
