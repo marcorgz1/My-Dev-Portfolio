@@ -1,6 +1,7 @@
 import { Header } from './components/Header'
 import { Presentation } from './components/Presentation'
 import { Projects } from './components/Projects'
+import { DevelopmentTools } from './components/DevelopmentTools'
 import { Studies } from './components/Studies'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
           <Header />
           <Presentation />
           <Studies />
-          <Projects />
+          <DevelopmentTools />
+          {/* <Projects /> */}
       </main>
     </>
   )

@@ -1,0 +1,31 @@
+.development_tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;    
+    margin-top: 64px;
+
+    & h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+.frontend,
+.backend,
+.databases,
+.other {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    margin-top: 2em;
+
+    & h2 {
+        font-size: 1.7em;
+    }
+}
