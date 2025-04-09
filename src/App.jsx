@@ -13,7 +13,7 @@ function App() {
           <Presentation />
           <Studies />
           <DevelopmentTools />
-          {/* <Projects /> */}
+          <Projects />
       </main>
     </>
   )

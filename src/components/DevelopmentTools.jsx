@@ -1,4 +1,4 @@
-import { HtmlIcon, CssIcon, JavascriptIcon, ReactIcon, TailwindcssIcon, ToolsIcon } from '../components/Icons'
+import { ToolsIcon, HtmlIcon, CssIcon, JavascriptIcon, ReactIcon, TailwindcssIcon, NodejsIcon, ExpressIcon, MongodbIcon, MysqlIcon, GithubIcon, GitIcon, GithubToolIcon } from '../components/Icons'
 import '../css/DevelopmentTools.css'
 
 export function DevelopmentTools () {
@@ -21,29 +21,23 @@ export function DevelopmentTools () {
             <div className="backend">
                 <h2>Backend</h2>
                 <div className="backend_tools">
-                    <CssIcon />
-                    <JavascriptIcon />
-                    <ReactIcon />
-                    <TailwindcssIcon />
+                    <NodejsIcon />
+                    <ExpressIcon />
                 </div>
             </div>
             <div className="databases">
                 <h2>Databases</h2>
                 <div className="databases_tools">
-                    <CssIcon />
-                    <JavascriptIcon />
-                    <ReactIcon />
-                    <TailwindcssIcon />
+                    <MongodbIcon />
+                    <MysqlIcon />
                 </div>
             </div>
             
             <div className="other">
                 <h2>Other tools</h2>
                 <div className="other_tools">
-                    <CssIcon />
-                    <JavascriptIcon />
-                    <ReactIcon />
-                    <TailwindcssIcon />
+                    <GitIcon />
+                    <GithubToolIcon />
                 </div>
             </div>
         </section>

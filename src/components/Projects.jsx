@@ -1,11 +1,13 @@
 import '../css/Projects.css'
 import { ProjectCard } from './ProjectCard'
+import firstProjectImage from '../assets/projects/first_project.png'
+import secondProjectImage from '../assets/projects/second_project.png'
 
 const PROJECTS = [
     {
         title: 'App Verificación Cuadros Istel',
         description: 'Aplicación para administrar los cuadros de luz de una empresa en base a los clientes y a los requisitos de los mismos.',
-        image: '../assets/projects/first_project.png',
+        image: firstProjectImage,
         technologies: ['React', 'NodeJS', 'MySQL'],
         github: 'https://github.com/marcorgz1/App-Verificacion-Cuadros-Istel'
     },
@@ -13,7 +15,7 @@ const PROJECTS = [
     {
         title: 'Tenfe',
         description: 'Aplicación para realizar viajes en tren alrededor de España de una forma intuitiva y sencilla.',
-        image: '../assets/projects/second_project.png',
+        image: secondProjectImage,
         technologies: ['React', 'NodeJS', 'MySQL'],
         url: 'https://tenfe.onrender.com'
     }

@@ -1,0 +1,31 @@
+.project_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2.5em;  
+
+    & img {
+        width: 450px;
+    }
+
+    & .technologies_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    & .project_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2em;
+
+        & > button {
+            cursor: pointer;
+            padding: 0.2em;
+        }
+    }
+}
