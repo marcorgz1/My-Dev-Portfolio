@@ -17,12 +17,12 @@ const PROJECTS = [
         description: 'Aplicación para realizar viajes en tren alrededor de España de una forma intuitiva y sencilla.',
         image: secondProjectImage,
         technologies: ['React', 'NodeJS', 'MySQL'],
+        github: 'https://github.com/marcorgz1/Aplicacion-Gestion-Trenes-Tenfe',
         url: 'https://tenfe.onrender.com'
     }
 ]
 
 export function Projects() {
-
     return (
         <section className='projects'>
             <h1 className='projects_title'>Proyectos</h1>
@@ -35,8 +35,8 @@ export function Projects() {
                             description={project.description} 
                             image={project.image} 
                             technologies={project.technologies} 
-                            github={project?.github}
-                            url={project?.url}
+                            github={project.github}
+                            url={project.url}
                         />
                     </div>
                 ))

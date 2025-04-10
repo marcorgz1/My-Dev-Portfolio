@@ -14,12 +14,16 @@ export function ProjectCard({ title, description, image, technologies, github, u
             }
             </div>
             <div className='project_buttons'>
-                <button>
-                    <a href={github}>GitHub</a>
-                </button>
-                <button>
-                    <a href={url}>Demo</a>
-                </button>
+                {github && (
+                    <button>
+                        <a href={github} target='_blank'>GitHub</a>
+                    </button>
+                )}
+                {url && (
+                    <button>
+                        <a href={url} target='_blank'>Demo</a>
+                    </button>
+                )}
             </div>
         </section>
     );
