@@ -3,14 +3,14 @@ import UseAnimations from 'react-useanimations';
 import download from 'react-useanimations/lib/download'
 import github from 'react-useanimations/lib/github';
 import linkedin from 'react-useanimations/lib/linkedin';
-import myCV from '../assets/Mi CV.pdf'
+import myCV from '/Mi CV.pdf'
 
 import '../css/Presentation.css'
 
 const handleDownload = () => {
     const link = document.createElement('a');
     link.href = myCV;
-    link.download = 'Mi CV.pdf';
+    link.download = 'my_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

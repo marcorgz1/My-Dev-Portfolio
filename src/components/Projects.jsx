@@ -1,7 +1,7 @@
 import '../css/Projects.css'
 import { ProjectCard } from './ProjectCard'
-import firstProjectImage from '../assets/projects/first_project.png'
-import secondProjectImage from '../assets/projects/second_project.png'
+import firstProjectImage from '/projects/first_project.png'
+import secondProjectImage from '/projects/second_project.png'
 
 const PROJECTS = [
     {

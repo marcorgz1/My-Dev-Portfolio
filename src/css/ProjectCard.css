@@ -8,6 +8,12 @@
 
     & img {
         width: 450px;
+        border-radius: 0.5em;
+    }
+
+    & p {
+        inline-size: 400px;
+        overflow-wrap: break-word;
     }
 
     & .technologies_container {
