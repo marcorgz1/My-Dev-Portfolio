@@ -3,20 +3,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
+    gap: 2em;
     margin-bottom: 2.5em;
-    background: #3c3c3c;
+    /* background: #2e2e2e; */
     border-radius: 12px;
     padding: 1.2em;
-
-    &:hover {
-        border: 2px solid #BF8EFF;
-        transition: all .3s ease;
-    }
 
     & img {
         width: 450px;
         border-radius: 0.5em;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease-in-out;
+
+        &:hover {
+            scale: 105%;
+            transition: scale .3s ease;
+            filter: grayscale(0%);
+        }
     }
 
     & p {
@@ -32,10 +35,18 @@
 
         & span {
             color: #000;
-            background: #ddc3ff;
+            background: #c99dff;
             padding: 0.3em 0.8em;
-            border-radius: 50px;
+            border-radius: 0.5em;
             font-size: 14px;
+
+            &:hover {
+                cursor: url('/hand.png'), pointer;
+                background: #dcbeff;
+                transition: background .3s ease;
+                scale: 110%;
+                transition: scale .3s ease;
+            }
         }
     }
 
@@ -53,7 +64,7 @@
             --blur: 30px;
             --bg: #080312;
             color: #e8d6ff;
-            cursor: pointer;
+            cursor: url('/hand.png'), pointer;
             /* use position: relative; so that BG is only for .btn */
             position: relative;
             isolation: isolate;
@@ -64,7 +75,6 @@
             border: 0;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
             transition: color 250ms;
-            cursor: pointer;
             padding:  0.6em 0.8em;
 
             &::after,
@@ -120,6 +130,7 @@
             & > a {
                 color: #e8d6ff;
                 text-decoration: none;
+                cursor: url('/hand.png'), pointer;
             }
         }
     }

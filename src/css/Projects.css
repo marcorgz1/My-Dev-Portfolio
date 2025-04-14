@@ -4,18 +4,25 @@
     align-items: center;
     margin-top: 6em;
 
-    & .projects_title {
-        font-size: 2.6em;
-        font-weight: bold;
-        color: #fff;
-        margin-bottom: 1em;
+    & .projects_title__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 3em;
+
+        & .projects_title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #fff;
+        }
     }
 
     & .projects_container {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 12em;
+        gap: 8em;
         margin-top: 0.7em;
     }
 }

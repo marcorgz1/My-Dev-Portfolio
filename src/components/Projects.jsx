@@ -1,4 +1,5 @@
 import '../css/Projects.css'
+import { ToolsIcon } from './Icons'
 import { ProjectCard } from './ProjectCard'
 import firstProjectImage from '/projects/first_project.png'
 import secondProjectImage from '/projects/second_project.png'
@@ -25,7 +26,10 @@ const PROJECTS = [
 export function Projects() {
     return (
         <section className='projects'>
-            <h1 className='projects_title'>Proyectos</h1>
+            <div className="projects_title__container">
+                <ToolsIcon />
+                <h1 className='projects_title'>Proyectos</h1>
+            </div>
             <div className='projects_container'>
             {
                 PROJECTS.map((project, index) => (
