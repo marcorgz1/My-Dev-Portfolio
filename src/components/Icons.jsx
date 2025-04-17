@@ -1,6 +1,6 @@
 export function GithubIcon() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" classNameName="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
         </svg>
@@ -10,7 +10,7 @@ export function GithubIcon() {
 
 export function LinkedinIcon() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" classNameName="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
         </svg>
@@ -20,7 +20,7 @@ export function LinkedinIcon() {
 
 export function SchoolIcon() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" classNameName="icon icon-tabler icons-tabler-outline icon-tabler-school">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-school">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" />
             <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" />
@@ -30,7 +30,7 @@ export function SchoolIcon() {
 
 export function ToolsIcon() {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-tools"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" /><path d="M14.5 5.5l4 4" /><path d="M12 8l-5 -5l-4 4l5 5" /><path d="M7 8l-1.5 1.5" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-tools"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" /><path d="M14.5 5.5l4 4" /><path d="M12 8l-5 -5l-4 4l5 5" /><path d="M7 8l-1.5 1.5" />
             <path d="M16 12l5 5l-4 4l-5 -5" />
             <path d="M16 17l-1.5 1.5" />
         </svg>
@@ -98,20 +98,20 @@ export function NodejsIcon() {
             <path fill="url(#IconifyId19619ea721ed563624)" d="M116.897 29.76L66.841.825A8 8 0 0 0 65.302.23L9.21 96.798a6.3 6.3 0 0 0 1.657 1.43l50.057 28.934c1.42.833 3.076 1.072 4.615.595l52.66-96.925a3.7 3.7 0 0 0-1.302-1.072" />
             <path fill="url(#IconifyId19619ea721ed563625)" d="M116.898 98.225c1.42-.833 2.485-2.262 2.958-3.81L65.066.108c-1.42-.238-2.959-.119-4.26.715L11.104 29.639l53.606 98.355c.71-.12 1.54-.358 2.25-.715z" />
             <defs><linearGradient id="IconifyId19619ea721ed563623" x1="34.513" x2="27.157" y1="15.535" y2="30.448" gradientTransform="translate(-129.242 -73.715)scale(6.18523)" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#3F873F" /><stop offset=".33" stop-color="#3F8B3D" />
-                <stop offset=".637" stop-color="#3E9638" />
-                <stop offset=".934" stop-color="#3DA92E" />
-                <stop offset="1" stop-color="#3DAE2B" /></linearGradient>
+                <stop stopColor="#3F873F" /><stop offset=".33" stopColor="#3F8B3D" />
+                <stop offset=".637" stopColor="#3E9638" />
+                <stop offset=".934" stopColor="#3DA92E" />
+                <stop offset="1" stopColor="#3DAE2B" /></linearGradient>
                 <linearGradient id="IconifyId19619ea721ed563624" x1="30.009" x2="50.533" y1="23.359" y2="8.288" gradientTransform="translate(-129.242 -73.715)scale(6.18523)" gradientUnits="userSpaceOnUse">
-                    <stop offset=".138" stop-color="#3F873F" />
-                    <stop offset=".402" stop-color="#52A044" />
-                    <stop offset=".713" stop-color="#64B749" />
-                    <stop offset=".908" stop-color="#6ABF4B" /></linearGradient>
+                    <stop offset=".138" stopColor="#3F873F" />
+                    <stop offset=".402" stopColor="#52A044" />
+                    <stop offset=".713" stopColor="#64B749" />
+                    <stop offset=".908" stopColor="#6ABF4B" /></linearGradient>
                 <linearGradient id="IconifyId19619ea721ed563625" x1="21.917" x2="40.555" y1="22.261" y2="22.261" gradientTransform="translate(-129.242 -73.715)scale(6.18523)" gradientUnits="userSpaceOnUse">
-                    <stop offset=".092" stop-color="#6ABF4B" />
-                    <stop offset=".287" stop-color="#64B749" />
-                    <stop offset=".598" stop-color="#52A044" />
-                    <stop offset=".862" stop-color="#3F873F" /></linearGradient>
+                    <stop offset=".092" stopColor="#6ABF4B" />
+                    <stop offset=".287" stopColor="#64B749" />
+                    <stop offset=".598" stopColor="#52A044" />
+                    <stop offset=".862" stopColor="#3F873F" /></linearGradient>
             </defs>
         </svg>
     )
@@ -158,7 +158,7 @@ export function GitIcon () {
 export function GithubToolIcon () {
     return (
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="100" height="100" viewBox="0 0 97.6 96">
-            <path class="st0" d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
+            <path className="st0" d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
                 c-13.6,2.9-16.4-5.9-16.4-5.9c-2.2-5.7-5.4-7.2-5.4-7.2c-4.4-3,0.3-3,0.3-3c4.9,0.3,7.5,5.1,7.5,5.1c4.4,7.5,11.4,5.4,14.2,4.1
                 c0.4-3.2,1.7-5.4,3.1-6.6c-10.8-1.1-22.2-5.4-22.2-24.3c0-5.4,1.9-9.8,5-13.2c-0.5-1.2-2.2-6.3,0.5-13c0,0,4.1-1.3,13.4,5.1
                 c3.9-1.1,8.1-1.6,12.2-1.6s8.3,0.6,12.2,1.6c9.3-6.4,13.4-5.1,13.4-5.1c2.7,6.8,1,11.8,0.5,13c3.2,3.4,5,7.8,5,13.2

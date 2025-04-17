@@ -8,8 +8,10 @@ export function ProjectCard({ title, description, image, technologies, github, u
             <p>{description}</p>
             <div className='technologies_container'>
             {
-                technologies.map((technology) => (
-                    <span>{technology}</span>
+                technologies.map((technology, index) => (
+                    <div key={index}>
+                        <span>{technology}</span>
+                    </div>
                 ))
             }
             </div>
