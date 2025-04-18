@@ -5,9 +5,9 @@
     align-items: center;
     gap: 2em;
     margin-bottom: 2.5em;
-    /* background: #2e2e2e; */
+    background: #151515;
     border-radius: 12px;
-    padding: 1.2em;
+    padding: 2em;
 
     & img {
         width: 450px;

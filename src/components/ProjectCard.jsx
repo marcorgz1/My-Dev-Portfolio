@@ -3,9 +3,9 @@ import '../css/ProjectCard.css'
 export function ProjectCard({ title, description, image, technologies, github, url }) {
     return (
         <section className="project_card">
-            <img src={image} alt="Project image" />
             <h2>{title}</h2>
             <p>{description}</p>
+            <img src={image} alt="Project image" />
             <div className='technologies_container'>
             {
                 technologies.map((technology, index) => (

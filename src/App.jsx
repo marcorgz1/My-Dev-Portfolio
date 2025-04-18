@@ -3,6 +3,8 @@ import { Presentation } from './components/Presentation'
 import { Projects } from './components/Projects'
 import { DevelopmentTools } from './components/DevelopmentTools'
 import { Studies } from './components/Studies'
+import { AboutMe } from './components/AboutMe'
+import { Experience } from './components/Experience'
 
 function App() {
 
@@ -12,8 +14,10 @@ function App() {
           <Header />
           <Presentation />
           <Studies />
+          <Experience />
           <DevelopmentTools />
           <Projects />
+          <AboutMe />
       </main>
     </>
   )
