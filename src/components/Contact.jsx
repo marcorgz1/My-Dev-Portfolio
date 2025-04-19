@@ -6,6 +6,27 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 export function Contact() {
     const madridPosition = [40.4168, -3.7038] // Madrid coordinates
 
+    const SOCIAL_LINKS = [
+        {
+            id: 1,
+            icon: <LinkedinContactIcon />,
+            name: 'Marco Rodriguez-Rey',
+            link: 'https://www.linkedin.com/in/marco-rodriguez-rey-b082361b9/'
+        },
+        {
+            id: 2,
+            icon: <GithubIcon />,
+            name: 'marcorgz1',
+            link: 'https://github.com/marcorgz1?tab=repositories'
+        },
+        {
+            id: 3,
+            icon: <MailIcon />,
+            name: 'marco.valdemoro@gmail.com',
+            link: 'mailto:marco.valdemoro@gmail.com'
+        }
+    ]
+
     return (
         <section className="contact">
             <h2>Contáctame</h2>
@@ -13,29 +34,18 @@ export function Contact() {
                 ¿Estás buscando a alguien con quién colaborar en algún proyecto? 
                 No dudes en ponerte en contacto conmigo.
             </p>
-            <div className="contact_container">
-                <div className="contact_left__container">
-                    <div className="country_container">
-                        <div className="home_icon">
-                            <HomeIcon />
-                        </div>
-                        <div className="country">
-                            <h3>España</h3>
-                            <span>Madrid, España</span>
-                        </div>
-                    </div>
-                    <div className="linkedin">
-                        <LinkedinContactIcon />
-                        <a href='https://www.linkedin.com/in/marco-rodriguez-rey-b082361b9/'>Marco Rodriguez-Rey</a>
-                    </div>
-                    <div className="github">
-                        <GithubIcon />
-                        <a href='https://github.com/marcorgz1?tab=repositories'>marcorgz1</a>
-                    </div>
-                    <div className="email">
-                        <MailIcon />
-                        <a href='mailto:marco.valdemoro@gmail.com'>marco.valdemoro@gmail.com</a>
-                    </div>
+            <div id="contact" className="contact_container">                    
+                <div className="contact_social_links">
+                {
+                    SOCIAL_LINKS.map((social_link) => {
+                        return (
+                            <a key={social_link.id} href={social_link.link} target="_blank">
+                                {social_link.icon}
+                                <span>{social_link.name}</span>
+                            </a>
+                        )
+                    })
+                }
                 </div>
                 <div className="map_container">
                     <MapContainer

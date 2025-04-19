@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../css/Navbar.css'
 
 export function Navbar() {
@@ -14,13 +15,13 @@ export function Navbar() {
         },
         {
             id: 3,
-            title: 'Proyectos',
-            url: '#projects'
+            title: 'Herramientas',
+            url: '#development_tools'
         },
         {
             id: 4,
-            title: 'Sobre Mí',
-            url: '#about-me'
+            title: 'Proyectos',
+            url: '#projects'
         },
         {
             id: 5,
@@ -36,7 +37,7 @@ export function Navbar() {
                 {
                     NAV_SECTIONS.map((section) => (
                         <li key={section.id}>
-                            {section.title}
+                            <a href={section.url}>{section.title}</a>
                         </li>
                     ))
                 }

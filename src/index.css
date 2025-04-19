@@ -20,6 +20,7 @@ body {
     min-height: 100vh;
     background-color: #020617;
     overflow-x: hidden;
+    padding-top: 80px;
 }
 
 .bg-animation {

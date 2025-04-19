@@ -1,39 +1,26 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    margin-top: 26px;
+    align-items: center;    
 }
 
 .navbar_sections {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1.5em;
     font-weight: 500;
 
     & > li {
         list-style: none;
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            background: #f0bfff;
-            transition: width 0.3s ease-in-out;
-        }
+        & a {
+            text-decoration: none;
+            color: #fff;
 
-        &:hover {
-            color: #f0bfff;
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-        }
-
-        &:hover::after {
-            width: 100%;
+            &:hover {
+                color: #c99dff;
+                cursor: url('/hand.png'), pointer;
+                transition: color .3s ease;
+            }
         }
     }
 }

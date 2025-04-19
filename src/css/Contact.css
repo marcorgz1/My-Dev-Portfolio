@@ -24,26 +24,29 @@
     gap: 2em;
   }
 
-  & .country_container,
-    .linkedin,
-    .github,
-    .email {
+  & .country_container {
     display: flex;
     align-items: center;
     gap: 1em;
   }
 
-  & .linkedin,
-    .github,
-    .email {
+  & .contact_social_links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+
     & a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
       color: #fff;
       text-decoration: none;
-
+      
       &:hover {
         color: #c99dff;
-        transition: color .3s ease;
+        text-decoration: none;
         cursor: url('/hand.png'), pointer;
+        transition: color .3s ease;
       }
     }
   }

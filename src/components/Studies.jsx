@@ -21,7 +21,7 @@ export function Studies () {
         }
     ]
     return (
-        <section className="studies">
+        <section id="studies" className="studies">
             <div className='studies_title'>
                 <SchoolIcon />
                 <h1>Estudios</h1>

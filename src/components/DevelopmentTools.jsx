@@ -3,7 +3,7 @@ import '../css/DevelopmentTools.css'
 
 export function DevelopmentTools () {
     return (
-        <section className="development_tools">
+        <section id="development_tools" className="development_tools">
             <h1>
                 <ToolsIcon />
                 Herramientas

@@ -25,7 +25,7 @@ const PROJECTS = [
 
 export function Projects() {
     return (
-        <section className='projects'>
+        <section id="projects" className='projects'>
             <div className="projects_title__container">
                 <ToolsIcon />
                 <h1 className='projects_title'>Proyectos</h1>
