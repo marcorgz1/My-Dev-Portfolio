@@ -3,7 +3,7 @@ import { Presentation } from './components/Presentation'
 import { Projects } from './components/Projects'
 import { DevelopmentTools } from './components/DevelopmentTools'
 import { Studies } from './components/Studies'
-import { AboutMe } from './components/AboutMe'
+import { Contact } from './components/Contact'
 import { Experience } from './components/Experience'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Experience />
           <DevelopmentTools />
           <Projects />
-          <AboutMe />
+          <Contact />
       </main>
     </>
   )

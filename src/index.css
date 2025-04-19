@@ -18,6 +18,43 @@ body {
     color: #fff;
     width: 100%;
     min-height: 100vh;
-    background: #5b00ab;
-    background: linear-gradient(0deg, rgb(50, 0, 93) 0%, rgba(0, 0, 0, 1) 100%);
+    background-color: #020617;
+    overflow-x: hidden;
 }
+
+.bg-animation {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .bg-pulse {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle 400px at 50% 50%, rgba(255, 255, 255, 0.06), transparent);
+    animation: pulse 4s infinite ease-in-out;
+  }
+  
+  .bg-noise {
+    position: absolute;
+    inset: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjI1Ii8+PC9zdmc+');
+    opacity: 0.5;
+  }
+  
+  .bg-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle 600px at 50% 50%, rgba(76, 29, 149, 0.25), transparent);
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
