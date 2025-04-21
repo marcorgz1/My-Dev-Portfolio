@@ -5,7 +5,13 @@
     align-items: center;
     gap: 12px;
     margin-top: 72px;
-    margin-left: 36px;
+    margin-left: 36px;   
+    
+    view-timeline-name: --reveal; 
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
 
     & .studies_title {
         display: flex;
@@ -41,6 +47,18 @@
             gap: 12px;
             list-style: none;
         }
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 10%
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
     }
 }
 
