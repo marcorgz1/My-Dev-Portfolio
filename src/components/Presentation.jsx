@@ -18,7 +18,7 @@ const handleDownload = () => {
 
 export function Presentation() {
     return (
-        <section className='presentation'>
+        <section id='presentation' className='presentation'>
             <div>
                 <img src={pfp} alt="Foto perfil" width={250} className='presentation_image' />
             </div>

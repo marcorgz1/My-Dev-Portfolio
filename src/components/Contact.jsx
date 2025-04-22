@@ -1,6 +1,6 @@
 import 'leaflet/dist/leaflet.css'
 import '../css/Contact.css'
-import { GithubIcon, LinkedinContactIcon, HomeIcon, MailIcon } from './Icons'
+import { GithubIcon, LinkedinContactIcon, MailIcon, MapIcon } from './Icons'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 export function Contact() {
@@ -57,7 +57,7 @@ export function Contact() {
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                         />
-                        <Marker position={madridPosition}>
+                        <Marker position={madridPosition} icon={MapIcon}>
                             <Popup>
                                 Madrid, España
                             </Popup>

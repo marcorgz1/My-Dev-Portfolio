@@ -28,7 +28,7 @@ export function Experience () {
 
     return (
         <>
-            <div className="experiences">
+            <div id="experience" className="experiences">
                 <div className="experiences_title">
                     <ExperienceIcon />
                     <h2>Experiencia</h2>

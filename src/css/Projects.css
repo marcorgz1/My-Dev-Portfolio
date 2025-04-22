@@ -4,12 +4,6 @@
     align-items: center;
     margin-top: 6em;
 
-    view-timeline-name: --reveal; 
-    animation-name: show;
-    animation-fill-mode: both;
-    animation-timeline: --reveal;
-    animation-range: entry 25% cover 50%;
-
     & .projects_title__container {
         display: flex;
         justify-content: center;
@@ -30,17 +24,5 @@
         align-items: center;
         gap: 8em;
         margin-top: 0.7em;
-    }
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-        scale: 10%
-    }
-
-    to {
-        opacity: 1;
-        scale: 100%;
     }
 }

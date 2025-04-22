@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import '../css/Navbar.css'
 
 export function Navbar() {
@@ -6,7 +5,7 @@ export function Navbar() {
         {
             id: 1,
             title: 'Inicio',
-            url: '#'
+            url: '#presentation'
         },
         {
             id: 2,
@@ -15,29 +14,46 @@ export function Navbar() {
         },
         {
             id: 3,
+            title: 'Experiencia',
+            url: '#experience'
+        },
+        {
+            id: 4,
             title: 'Herramientas',
             url: '#development_tools'
         },
         {
-            id: 4,
+            id: 5,
             title: 'Proyectos',
             url: '#projects'
         },
         {
-            id: 5,
+            id: 6,
             title: 'Contacto',
             url: '#contact'
         }
     ]
 
+    const scrollToSection = (e, url) => {
+        e.preventDefault();
+        const element = document.querySelector(url);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
         <nav className='navbar'>
             <ul className='navbar_sections'>
-
                 {
                     NAV_SECTIONS.map((section) => (
                         <li key={section.id}>
-                            <a href={section.url}>{section.title}</a>
+                            <a 
+                                href={section.url}
+                                onClick={(e) => scrollToSection(e, section.url)}
+                            >
+                                {section.title}
+                            </a>
                         </li>
                     ))
                 }
