@@ -11,15 +11,15 @@ function App() {
 
   return (
     <>
-      <main>
-          <Header />                
-          <Presentation />                
-          <Studies />                
-          <Experience />
-          <DevelopmentTools />                
-          <Projects />                
-          <Contact />                
-          <Footer />        
+      <main>        
+        <Header />
+        <Presentation />
+        <Studies />
+        <Experience />
+        <DevelopmentTools />
+        <Projects />
+        <Contact />
+        <Footer />
       </main>
     </>
   )
