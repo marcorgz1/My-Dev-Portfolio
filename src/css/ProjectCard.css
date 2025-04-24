@@ -54,8 +54,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 2em;
-        margin-top: 0.5em;
+        gap: 2.5em;
+        margin-top: 1.5em;
 
         & button {
             --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
@@ -71,7 +71,7 @@
             display: inline-grid;
             place-content: center;
             /* padding: 0.5em 1.5em; */
-            font-size: 17px;
+            font-size: 1em;
             border: 0;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
             transition: color 250ms;
@@ -131,7 +131,12 @@
                 color: #e8d6ff;
                 text-decoration: none;
                 cursor: url('/hand.png'), pointer;
-            }
+            }            
+        }
+
+        & span {
+            opacity: 0.8;
+            cursor: url('/text.png'), text;
         }
     }
 }

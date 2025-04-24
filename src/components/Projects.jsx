@@ -34,14 +34,19 @@ export function Projects() {
             {
                 PROJECTS.map((project, index) => (
                     <div key={index}>
-                        <ProjectCard 
-                            title={project.title} 
-                            description={project.description} 
-                            image={project.image} 
-                            technologies={project.technologies} 
-                            github={project.github}
-                            url={project.url}
-                        />
+                    {
+                        project.github && (
+
+                            <ProjectCard 
+                                title={project.title} 
+                                description={project.description} 
+                                image={project.image} 
+                                technologies={project.technologies} 
+                                github={project.github}
+                                url={project.url}
+                            />
+                        ) 
+                    }
                     </div>
                 ))
             }

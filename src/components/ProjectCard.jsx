@@ -16,16 +16,25 @@ export function ProjectCard({ title, description, image, technologies, github, u
             }
             </div>
             <div className='project_buttons'>
-                {github && (
-                    <button>
-                        <a href={github} target='_blank'>GitHub</a>
-                    </button>
-                )}
-                {url && (
-                    <button>
-                        <a href={url} target='_blank'>Demo</a>
-                    </button>
-                )}
+                {
+                    github ? (
+                        <button>
+                            <a href={github} target='_blank'>GitHub</a>
+                        </button>
+                    ) : (
+                        <span disabled>Código no disponible</span>
+                    )
+                }
+                
+                {
+                    url ? (
+                        <button>
+                            <a href={url} target='_blank'>Demo</a>
+                        </button>
+                    ) : (
+                        <span disabled>Demo no disponible</span>
+                    )
+                }
             </div>
         </section>
     );

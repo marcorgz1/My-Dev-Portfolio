@@ -1,44 +1,45 @@
-import { ToolsIcon, HtmlIcon, CssIcon, JavascriptIcon, ReactIcon, TailwindcssIcon, NodejsIcon, ExpressIcon, MongodbIcon, MysqlIcon, GithubIcon, GitIcon, GithubToolIcon } from '../components/Icons'
+import { ToolsIcon, HtmlIcon, CssIcon, JavascriptIcon, ReactIcon, TailwindcssIcon, MongodbIcon, MysqlIcon, GitIcon, GithubToolIcon } from '../components/Icons'
 import '../css/DevelopmentTools.css'
+
+const DEVELOPMENT_TOOLS = [
+    {
+        title: 'Frontend',
+        technologies: [HtmlIcon, CssIcon, JavascriptIcon, ReactIcon, TailwindcssIcon]
+    },
+    {
+        title: 'Bases de datos',
+        technologies: [MongodbIcon, MysqlIcon]
+    },
+    {
+        title: 'Otras herramientas',
+        technologies: [GitIcon, GithubToolIcon]
+    },
+]
 
 export function DevelopmentTools () {
     return (
-        <section id="development_tools" className="development_tools">
+        <section id="development_tools" className="development_tools__container">
             <h1>
                 <ToolsIcon />
                 Herramientas
             </h1>
-            <div className="frontend">
-                <h2>Frontend</h2>
-                <div className="frontend_tools">
-                    <HtmlIcon />
-                    <CssIcon />
-                    <JavascriptIcon />
-                    <ReactIcon />
-                    <TailwindcssIcon />
-                </div>
-            </div>
-            <div className="backend">
-                <h2>Backend</h2>
-                <div className="backend_tools">
-                    <NodejsIcon />
-                    <ExpressIcon />
-                </div>
-            </div>
-            <div className="databases">
-                <h2>Databases</h2>
-                <div className="databases_tools">
-                    <MongodbIcon />
-                    <MysqlIcon />
-                </div>
-            </div>
-            
-            <div className="other">
-                <h2>Other tools</h2>
-                <div className="other_tools">
-                    <GitIcon />
-                    <GithubToolIcon />
-                </div>
+            <div className="development_tools">
+            {
+                DEVELOPMENT_TOOLS.map((development_tool, index) => (
+                    <div key={index} className='development_tool__card'>
+                        <h2>{development_tool.title}</h2>
+                        <div className="technologies__container">
+                        {
+                            development_tool.technologies.map((Technology, index) => (
+                                <span key={index}>
+                                    <Technology />
+                                </span>
+                            ))
+                        }
+                        </div>
+                    </div>
+                ))
+            }
             </div>
         </section>
     )
