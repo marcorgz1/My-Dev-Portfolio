@@ -29,7 +29,7 @@ export function Presentation() {
                 <div className='gradient_button'>
                     <button>Disponible</button>
                 </div>
-                <span>Junior Full Stack Developer</span>
+                <span>Junior Frontend Developer</span>
                 <p>
                     Desarrollador Web Full Stack apasionado en crear webs innovadoras
                     y únicas haciendo uso de diversas tecnologías. Siempre con ganas de aprender
