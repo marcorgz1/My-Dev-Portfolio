@@ -39,7 +39,7 @@ export function Presentation() {
                 <div className='presentation_social_buttons'>
                     <button className='social_button' onClick={handleDownload}>                        
                         <UseAnimations animation={download} size={32} strokeColor='white' />
-                        <span>Descarga mi CV</span>                        
+                        <span>Descarga mi CV</span>                    
                     </button>
                     <a href='https://github.com/marcorgz1?tab=repositories' target='_blank' className="social_button">
                         <UseAnimations animation={github} size={32} strokeColor='white' />
