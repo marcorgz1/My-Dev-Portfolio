@@ -31,7 +31,7 @@ export function DevelopmentTools () {
                         <div className="technologies__container">
                         {
                             development_tool.technologies.map((Technology, index) => (
-                                <span key={index}>
+                                <span className='development_tool__icon' key={index}>
                                     <Technology />
                                 </span>
                             ))
