@@ -22,7 +22,7 @@ export function ProjectCard({ title, description, image, technologies, github, u
                             <a href={github} target='_blank'>GitHub</a>
                         </button>
                     ) : (
-                        <span disabled>Código no disponible</span>
+                        <span disabled>❌ Código no disponible</span>
                     )
                 }
                 
@@ -32,7 +32,7 @@ export function ProjectCard({ title, description, image, technologies, github, u
                             <a href={url} target='_blank'>Demo</a>
                         </button>
                     ) : (
-                        <span disabled>Demo no disponible</span>
+                        <span disabled>❌ Demo no disponible</span>
                     )
                 }
             </div>

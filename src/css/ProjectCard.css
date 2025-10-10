@@ -41,7 +41,6 @@
             font-size: 14px;
 
             &:hover {
-                cursor: url('/hand.png'), pointer;
                 background: #dcbeff;
                 transition: background .3s ease;
                 scale: 110%;
@@ -131,12 +130,11 @@
                 color: #e8d6ff;
                 text-decoration: none;
                 cursor: url('/hand.png'), pointer;
-            }            
+            }         
         }
 
         & span {
             opacity: 0.8;
-            cursor: url('/text.png'), text;
         }
     }
 }

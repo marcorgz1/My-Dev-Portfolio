@@ -1,20 +1,9 @@
-import pfp from '../assets/pfp.jpg'
+import pfp from '../assets/pfp.jpg';
 import UseAnimations from 'react-useanimations';
-import download from 'react-useanimations/lib/download'
 import github from 'react-useanimations/lib/github';
 import linkedin from 'react-useanimations/lib/linkedin';
-import myCV from '/Mi CV.pdf'
 
 import '../css/Presentation.css'
-
-const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = myCV;
-    link.download = 'my_CV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
 
 export function Presentation() {
     return (
@@ -37,10 +26,6 @@ export function Presentation() {
                     haciendo un gran esfuerzo en el desarrollo y la experiencia del usuario en las mismas.
                 </p>
                 <div className='presentation_social_buttons'>
-                    <button className='social_button' onClick={handleDownload}>                        
-                        <UseAnimations animation={download} size={32} strokeColor='white' />
-                        <span>Descarga mi CV</span>                    
-                    </button>
                     <a href='https://github.com/marcorgz1?tab=repositories' target='_blank' className="social_button">
                         <UseAnimations animation={github} size={32} strokeColor='white' />
                         <span>Github</span>
