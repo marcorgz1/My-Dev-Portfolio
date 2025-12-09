@@ -8,8 +8,8 @@ import '../css/Presentation.css'
 export function Presentation() {
     return (
         <section id='presentation' className='presentation'>
-            <div>
-                <img src={pfp} alt="Foto perfil" width={250} className='presentation_image' />
+            <div className='presentation_image_wrapper'>
+                <img src={pfp} alt="Foto perfil" className='presentation_image' />
             </div>
             <div className='personal_info'>
                 <h1 className='welcome_text'>

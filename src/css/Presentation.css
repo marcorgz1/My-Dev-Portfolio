@@ -7,11 +7,19 @@
 
 }
 
+.presentation_image_wrapper {
+    background: linear-gradient(to right, #fef08a, #d089ff);
+    padding: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .presentation_image {
-    width: 280px;
-    height: 350px;
-    border: 8px solid #fff;
-    border-radius: 100%;
+    width: 270px;
+    height: 320px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .personal_info {

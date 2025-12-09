@@ -4,9 +4,7 @@ import '../css/Header.css'
 export function Header () {
     return (
         <main className='header'>
-            <div>
-                <span>Marco</span>    
-            </div>     
+            <div></div>
             <Navbar />
             <div></div>       
         </main>
