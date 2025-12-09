@@ -22,8 +22,8 @@ export function Contact() {
         {
             id: 3,
             icon: <MailIcon />,
-            name: 'marco.valdemoro@gmail.com',
-            link: 'mailto:marco.valdemoro@gmail.com'
+            name: 'marco.rodriguezrey@gmail.com',
+            link: 'mailto:marco.rodriguezrey@gmail.com'
         }
     ]
 
