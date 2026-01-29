@@ -18,7 +18,6 @@
 
             &:hover {
                 color: #c99dff;
-                cursor: url('/hand.png'), pointer;
                 transition: color .3s ease;
             }
         }

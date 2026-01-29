@@ -1,4 +1,4 @@
-import pfp from '../assets/pfp.jpg';
+import avatar from '../../assets/avatar.png';
 import UseAnimations from 'react-useanimations';
 import github from 'react-useanimations/lib/github';
 import linkedin from 'react-useanimations/lib/linkedin';
@@ -8,9 +8,7 @@ import '../css/Presentation.css'
 export function Presentation() {
     return (
         <section id='presentation' className='presentation'>
-            <div className='presentation_image_wrapper'>
-                <img src={pfp} alt="Foto perfil" className='presentation_image' />
-            </div>
+            <img src={avatar} alt="Avatar" className='presentation_image' />
             <div className='personal_info'>
                 <h1 className='welcome_text'>
                     Hola, soy Marco
@@ -26,11 +24,11 @@ export function Presentation() {
                     haciendo un gran esfuerzo en el desarrollo y la experiencia del usuario en las mismas.
                 </p>
                 <div className='presentation_social_buttons'>
-                    <a href='https://github.com/marcorgz1?tab=repositories' target='_blank' className="social_button">
+                    <a href='https://github.com/marcorgz1?tab=repositories' target='_blank' rel='noopener noreferrer' className="social_button">
                         <UseAnimations animation={github} size={32} strokeColor='white' />
                         <span>Github</span>
                     </a>
-                    <a href='https://www.linkedin.com/in/marco-rodriguez-rey-b082361b9/' target='_blank' className="social_button">
+                    <a href='https://www.linkedin.com/in/marco-rodriguez-rey-b082361b9/' target='_blank' rel='noopener noreferrer' className="social_button">
                         <UseAnimations animation={linkedin} size={32} strokeColor='white' />
                         <span>Linkedin</span>
                     </a>

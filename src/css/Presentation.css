@@ -7,19 +7,12 @@
 
 }
 
-.presentation_image_wrapper {
-    background: linear-gradient(to right, #fef08a, #d089ff);
-    padding: 8px;
-    border-radius: 50%;
-    display: inline-block;
-}
-
 .presentation_image {
     width: 270px;
     height: 320px;
-    display: block;
-    border-radius: 50%;
     object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .personal_info {
@@ -44,14 +37,13 @@
 }
 
 .welcome_text {
-    display: inline-block;
-    background-image: linear-gradient(to right, #fef08a, #b363ff 50%);
-    /* from-yellow-200 to-purple-500 */
+    background-image: linear-gradient(to right, #fef08a, #b363ff 50%); /* from-yellow-200 to-purple-500 */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px);
     font-weight: bold;
+    margin: 0;
 }
 
 /* Gradient animated button */
@@ -104,7 +96,6 @@
     }
 
     &:hover {
-        cursor: url('/hand.png'), pointer;
         box-shadow: 0 0 5px #d19dff, 0 0 10px #d19dff, 0 0 20px #d19dff;
     }
 
