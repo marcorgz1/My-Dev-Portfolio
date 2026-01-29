@@ -1,4 +1,5 @@
 import avatar from '../../assets/avatar.png';
+import avatar2 from '../../assets/avatar2.png';
 import UseAnimations from 'react-useanimations';
 import github from 'react-useanimations/lib/github';
 import linkedin from 'react-useanimations/lib/linkedin';
@@ -8,7 +9,7 @@ import '../css/Presentation.css'
 export function Presentation() {
     return (
         <section id='presentation' className='presentation'>
-            <img src={avatar} alt="Avatar" className='presentation_image' />
+            <img src={avatar2} alt="Avatar" className='presentation_image' />
             <div className='personal_info'>
                 <h1 className='welcome_text'>
                     Hola, soy Marco
