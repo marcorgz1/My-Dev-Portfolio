@@ -1,4 +1,4 @@
-import avatar from '../../assets/avatar.png';
+// import avatar from '../../assets/avatar.png';
 import avatar2 from '../../assets/avatar2.png';
 import UseAnimations from 'react-useanimations';
 import github from 'react-useanimations/lib/github';
@@ -17,13 +17,15 @@ export function Presentation() {
                 <div className='gradient_button'>
                     <button>Disponible</button>
                 </div>
-                <span>Junior Frontend Developer</span>
-                <p>
-                    Desarrollador Web Full Stack apasionado en crear webs innovadoras
-                    y únicas haciendo uso de diversas tecnologías. Siempre con ganas de aprender
-                    nuevas tecnologías. Siempre intentando desarrollar aplicaciones web mantenibles y escalables,
-                    haciendo un gran esfuerzo en el desarrollo y la experiencia del usuario en las mismas.
-                </p>
+                <div className="description">
+                    <span>Junior Frontend Developer</span>
+                    <p>
+                        Desarrollador Web Full Stack apasionado en crear webs innovadoras
+                        y únicas haciendo uso de diversas tecnologías. Siempre con ganas de aprender
+                        nuevas tecnologías. Siempre intentando desarrollar aplicaciones web mantenibles y escalables,
+                        haciendo un gran esfuerzo en el desarrollo y la experiencia del usuario en las mismas.
+                    </p>
+                </div>
                 <div className='presentation_social_buttons'>
                     <a href='https://github.com/marcorgz1?tab=repositories' target='_blank' rel='noopener noreferrer' className="social_button">
                         <UseAnimations animation={github} size={32} strokeColor='white' />

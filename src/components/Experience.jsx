@@ -12,18 +12,18 @@ export function Experience () {
             description: 'Reparación y mantenimiento de dispositivos Apple (Iphone, Macbooks, iMacs etc.)'
         },
         {
-            title: 'Prácticas como desarrollador web',
-            company: 'Istel',
-            year: '2024',
-            description: 'Desarrollo de una aplicación web full stack para la gestión de los cuadros de luz de la empresa haciendo uso de tecnologías modernas tanto en front-end como back-end.',
-            technologies: ['React', 'Node.js', 'MySQL']
-        },
-        {
             title: 'Desarrollador Web Frontend',
             company: 'Autorepuestos Valdemoro',
             year: '2023',
             description: 'Realización de aplicaciones web sencillas a distintos clientes.',
             technologies: ['HTML', 'CSS', 'JavaScript', 'React']
+        },
+        {
+            title: 'Prácticas como desarrollador web',
+            company: 'Istel',
+            year: '2024',
+            description: 'Desarrollo de una aplicación web full stack para la gestión de los cuadros de luz de la empresa haciendo uso de tecnologías modernas tanto en front-end como back-end.',
+            technologies: ['React', 'Node.js', 'MySQL']
         }
     ]
 

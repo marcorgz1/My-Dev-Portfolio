@@ -6,7 +6,7 @@
 .navbar_sections {
     display: flex;
     align-items: center;
-    gap: 1.5em;
+    gap: 6rem;
     font-weight: 500;
 
     & > li {
