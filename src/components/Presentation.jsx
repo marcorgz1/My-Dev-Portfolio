@@ -14,9 +14,6 @@ export function Presentation() {
                 <h1 className='welcome_text'>
                     Hola, soy Marco
                 </h1>
-                <div className='gradient_button'>
-                    <button>Disponible</button>
-                </div>
                 <div className="description">
                     <span>Junior Frontend Developer</span>
                     <p>
@@ -25,6 +22,9 @@ export function Presentation() {
                         nuevas tecnologías. Siempre intentando desarrollar aplicaciones web mantenibles y escalables,
                         haciendo un gran esfuerzo en el desarrollo y la experiencia del usuario en las mismas.
                     </p>
+                </div>
+                <div className='gradient_button'>
+                    <button>Disponible</button>
                 </div>
                 <div className='presentation_social_buttons'>
                     <a href='https://github.com/marcorgz1?tab=repositories' target='_blank' rel='noopener noreferrer' className="social_button">
